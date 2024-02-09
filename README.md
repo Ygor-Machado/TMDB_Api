@@ -3,7 +3,7 @@ Tenha o php >= 8.2 e o composer instalado na sua máquina
 
 Clone o projeto
 ```sh
-[git clone https://github.com/Ygor-Machado/TMDB_Api.git
+git clone https://github.com/Ygor-Machado/TMDB_Api.git
 ```
 ```sh
 cd TMDB_Api/
