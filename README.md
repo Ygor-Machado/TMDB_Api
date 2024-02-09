@@ -9,7 +9,7 @@ Clone o projeto
 cd TMDB_Api/
 ```
 ```sh
-crie um banco de dados com o nome slim4, username root e password 1234
+crie um banco de dados com o nome slim4, username root e password 1234 pode criar com outros nomes, mas ai terá que alterar no arquivo Connection.php
 ```
 
 Digite o comando para instalar dependências
