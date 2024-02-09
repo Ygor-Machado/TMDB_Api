@@ -8,6 +8,9 @@ Clone o projeto
 ```sh
 cd TMDB_Api/
 ```
+```sh
+crie um banco de dados com o nome slim4, username root e password 1234
+```
 
 Digite o comando para instalar dependências
 ```sh
