@@ -5,10 +5,18 @@ namespace app\tests\controllers;
 use app\controllers\ApiController;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Testes unitários para a classe ApiController.
+ */
 class ApiControllerTest Extends TestCase
 {
+    /**
+     * Testa o método `get` da ApiController em caso de sucesso.
+     */
     public function testGetSuccess()
     {
+
+        // Variáveis do teste
         $apiKey = 'aff887f3ea03f726894bd66d7b66a0c1';
         $name = 'Batman';
         $page = 1;
@@ -37,8 +45,13 @@ class ApiControllerTest Extends TestCase
         $this->assertEquals('Dados simulados da API', $result['data']);
     }
 
+    /**
+     * Testa o método `get` da ApiController em caso de erro.
+     */
     public function testGetError()
     {
+
+        // Variáveis do teste
         $apiKey = 'aff887f3ea03f726894bd66d7b66a0c1';
         $name = 'error';
         $page = 1;
@@ -64,8 +77,13 @@ class ApiControllerTest Extends TestCase
         $this->assertNull($result['data']);
     }
 
+    /**
+     * Testa o método `getMovieDetails` da ApiController em caso de sucesso.
+     */
     public function testGetMovieDetailsSuccess()
     {
+
+        // Variáveis do teste
         $apiKey = 'aff887f3ea03f726894bd66d7b66a0c1';
         $movieId = 123;
 
@@ -93,8 +111,13 @@ class ApiControllerTest Extends TestCase
         $this->assertEquals('Dados simulados da API para detalhes do filme', $result['data']);
     }
 
+    /**
+     * Testa o método `getMovieDetails` da ApiController em caso de erro.
+     */
     public function testGetMovieDetailsError()
     {
+
+        // Variáveis do teste
         $apiKey = 'aff887f3ea03f726894bd66d7b66a0c1';
         $movieId = 456;
 

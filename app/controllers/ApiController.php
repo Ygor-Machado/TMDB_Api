@@ -2,8 +2,19 @@
 
 namespace app\controllers;
 
+/**
+ * Controlador para interação com a API do The Movie Database.
+ */
 class ApiController extends Controller
 {
+    /**
+     * Obtém os resultado de pesquisa da API.
+     *
+     * @param string $name O nome do filme para pesquisar.
+     * @param int $page A página da lista de filmes.
+     *
+     * @return array Retorna um array com os dados dos filmes.
+     */
     public  function get($name, $page): array
     {
         // Inicializa uma sessão cURL
@@ -35,6 +46,13 @@ class ApiController extends Controller
         ];
     }
 
+    /**
+     * Obtém os detalhes de um filme.
+     *
+     * @param int $id O ID do filme.
+     *
+     * @return array Retorna um array com status, mensagem e dados da API.
+     */
     public function getMovieDetails($id): array
     {
         // Inicializa uma sessão cURL
