@@ -11,7 +11,7 @@ cd TMDB_Api/
 
 Digite o comando para instalar dependências
 ```sh
-Composer install
+composer install
 ```
 
 Rode o servidor local do PHP
